@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest 2026 - Final Accommodation</title>
+    <style>
+        :root {
+            --primary-blue: #001f3f;
+            --secondary-blue: #003366;
+            --pitch-green: #2ecc71;
+            --accent-red: #d32f2f;
+            --light-gray: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body { 
+            font-family: 'Oswald', sans-serif; 
+            line-height: 1.6; 
+            background-color: var(--light-gray); 
+            margin: 0; 
+            padding: 0; 
+            color: #333;
+        }
+
+        /* Header & Logo */
+        header { 
+            background: linear-gradient(rgba(0,31,63,0.9), rgba(0,31,63,0.9)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center; 
+            padding: 40px 20px;
+            border-bottom: 5px solid var(--pitch-green);
+        }
+
+        .main-logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.5));
+        }
+
+        h1 { margin: 10px 0; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Container */
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 15px; }
+
+        /* Card Style */
+        .card { 
+            background: var(--white); 
+            margin-bottom: 50px; 
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            overflow: hidden;
+            border-top: 8px solid var(--secondary-blue);
+        }
+
+        .card-header {
+            background: var(--secondary-blue);
+            color: var(--white);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card-body { padding: 25px; }
+
+        h2 { color: var(--primary-blue); margin-top: 0; text-transform: uppercase; font-size: 1.5rem; }
+
+        /* Info Tags */
+        .info-grid {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #e9ecef;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-left: 4px solid var(--pitch-green);
+        }
+
+        .highlight-red { color: var(--accent-red); }
+
+        /* Image Grid */
+        .image-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+            gap: 10px; 
+            margin-top: 25px; 
+        }
+
+        .image-placeholder { 
+            background: #dee2e6; 
+            aspect-ratio: 1/1; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #adb5bd; 
+            border-radius: 8px; 
+            font-size: 0.8em;
+            text-transform: uppercase;
+            transition: transform 0.2s;
+        }
+
+        .image-placeholder:hover { transform: scale(1.02); background: #ced4da; }
+
+        /* Contact Button */
+        .contact-btn { 
+            display: block;
+            background: var(--pitch-green); 
+            color: var(--primary-blue); 
+            text-align: center;
+            padding: 15px; 
+            border-radius: 8px; 
+            font-weight: 900; 
+            text-decoration: none;
+            margin-top: 20px;
+            text-transform: uppercase;
+            transition: opacity 0.2s;
+        }
+
+        .contact-btn:hover { opacity: 0.9; }
+
+        footer { 
+            text-align: center; 
+            padding: 50px; 
+            background: var(--primary-blue); 
+            color: var(--white); 
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .image-grid { grid-template-columns: repeat(2, 1fr); }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="image 2.png" alt="Arsenal vs PSG" class="main-logo">
+    <h1>Match Day Accommodations</h1>
+    <p>Budapest | May 29 - 31, 2026</p>
+</header>
+
+<div class="container">
+    
+    <div class="card">
+        <div class="card-header">
+            <span>3 room apartment</span>
+            <span class="highlight-red">Central Location</span>
+        </div>
+        <div class="card-body">
+            <h2>Downtown Apartment</h2>
+            <div class="info-grid">
+                <div class="tag">Sleeps: 6 Guests</div>
+                <div class="tag">Rooms: 3</div>
+                <div class="tag">Stadium: 20 min (Direct)</div>
+            </div>
+            <p>Premium central location with easy airport access (30 min). Perfect for groups of fans wanting to be in the heart of the action.</p>
+            
+            <div class="image-grid">
+                <div class="image-placeholder">Exterior</div>
+                <div class="image-placeholder">Bedroom 1</div>
+                <div class="image-placeholder">Bedroom 2</div>
+                <div class="image-placeholder">Living Room</div>
+                <div class="image-placeholder">Kitchen</div>
+                <div class="image-placeholder">Bathroom</div>
+            </div>
+            <a href="https://wa.me/36306174052" class="contact-btn">Book via WhatsApp: +36 30 617 4052</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span>STADIUM ZONE</span>
+            <span class="highlight-red">700M FROM PUSKÁS ARÉNA</span>
+        </div>
+        <div class="card-body">
+            <h2>Stadium Proximity Private Suite</h2>
+            <div class="info-grid">
+                <div class="tag">Sleeps: 4 Guests</div>
+                <div class="tag">Walk: 5-7 mins to Gate</div>
+                <div class="tag">Airport Shuttle Available</div>
+            </div>
+            <p>Located on Thököly út. You won't find anything closer to the stadium. Includes options for private airport transport.</p>
+            
+            <div class="image-grid">
+                <div class="image-placeholder">View</div>
+                <div class="image-placeholder">Suite</div>
+                <div class="image-placeholder">Amenities</div>
+                <div class="image-placeholder">Map</div>
+                <div class="image-placeholder">Lobby</div>
+                <div class="image-placeholder">Bedroom</div>
+            </div>
+            <a href="https://wa.me/36703411198" class="contact-btn">Book via WhatsApp: +36 70 341 1198</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span>QUIET ZONE</span>
+            <span>GARDEN AREA</span>
+        </div>
+        <div class="card-body">
+            <h2>Peaceful Guest House</h2>
+            <div class="info-grid">
+                <div class="tag">Sleeps: 2 Guests</div>
+                <div class="tag">Quiet Green Area</div>
+                <div class="tag">Stadium: 40 min (Direct Bus)</div>
+            </div>
+            <p>Escape the matchday noise in this private guesthouse. Direct bus line takes you straight to the fan zone and stadium.</p>
+            
+            <div class="image-grid">
+                <div class="image-placeholder">Garden</div>
+                <div class="image-placeholder">Entrance</div>
+                <div class="image-placeholder">Room</div>
+                <div class="image-placeholder">Patio</div>
+                <div class="image-placeholder">Bath</div>
+                <div class="image-placeholder">Street</div>
+            </div>
+            <a href="https://wa.me/36306174052" class="contact-btn">Book via WhatsApp: +36 30 617 4052</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>CUSTOM REQUESTS?</strong></p>
+    <p>Text us for other accommodation needs: +36 30 617 4052 / +36 70 341 1198</p>
+    <p style="margin-top:20px; font-size: 0.7rem; opacity: 0.6;"></p>
+</footer>
+
+</body>
+</html>
